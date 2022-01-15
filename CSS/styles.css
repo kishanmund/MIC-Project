@@ -147,6 +147,11 @@ table{
     width: 100%;
 }
 
+#breadcrumbs{
+    font-size: 24px;
+    font-weight: bold;
+
+
 /* Responsive Design */
 
 @media only screen and (max-width: 600px){
@@ -171,9 +176,9 @@ table{
     .closebtn{
         display: block !important;
     }
+    #breadcrumbs {
+        font-size: 16px;
+    }
   }
 
-  #breadcrumbs{
-      font-size: 24px;
-      font-weight: bold;
   }
