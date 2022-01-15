@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>MIC - Project</title>
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
@@ -11,25 +12,33 @@
 </head>
 
 <body>
-    <header>
-        <span class="hamburger" onclick="sideBar()">☰</span>
-        <img class="logo" src="./img/mic.jpg" alt="">
+    <header class="header">
+        <span class="hamburger" onclick="sideBar('non')">☰</span>
+        <img class="logo" src="https://d5gdqotkuzdho.cloudfront.net/assets/images/new/mic_logo_new.svg" alt="">
+    </header>
+    <header class="mobileHeader">
+        <span class="hamburger" onclick="sideBar('mob')">☰</span>
+        <img class="logo" src="https://d5gdqotkuzdho.cloudfront.net/assets/images/new/mic_logo_new.svg" alt="">
+        
     </header>
     <div style="position: relative;">
-        <div id="mySidebar" class="sidebar">
-            <span onclick='url("users")'>Users</span>
+        <div id="mySidebar" class="sidebar" onclick="sideBar('mob')">
+            <span class="closebtn" >x</span>
+            <span onclick='url("users")' >Manage Users</span>
+            <span onclick='url("table")' >Show Users</span>
             
         </div>
 
         <div id="container">
             <div class="breadcrumbs">
-                <span>Name</span>
+                <span id="breadcrumbs">Manage Users</span>
                 <div class="searchContainer">
                     <input class="search" type="text">
                     <input class="searchBtn" type="button" value="Go">
                 </div>
             </div>
-            <iframe id="users" src="./components/table.html" title="Iframe Example"></iframe>
+            <iframe id="users" src="./components/users.html" ></iframe>
+            <iframe id="table" src="./components/table.html" ></iframe>
         </div>
 
         

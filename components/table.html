@@ -1,63 +1,124 @@
 <html>
 
 <head>
-    <script src="./../js/table.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js">
     </script>
-    
+
 </head>
 
 <body>
-    <table id="table_id" class="display">
-        
+    <table id="table_id" class="display" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Location</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
         </tbody>
     </table>
 
     <script>
-       var data = [{
-    "Name": "Paul",
-    "Age": 22,
-    "Location": "Canada",
-    "Contact": "+1290418345"
-			},
-  {
-    "Name": "Erica",
-    "Age": 32,
-    "Location": "Miami",
-    "Contact": "+1992418345"
-			},
-  {
-    "Name": "Pritam",
-    "Age": 29,
-    "Location": "India",
-    "Contact": "+91977418345"
-			},
-  {
-    "Name": "Williams",
-    "Age": 20,
-    "Location": "England",
-    "Contact": "+324290418345"
-			}
-			];
+        var data = [
+            {
+                "Name": "Paul",
+                "Age": 22,
+                "Location": "Canada",
+                "Contact": "+1290418345"
+            },
+            {
+                "Name": "Erica",
+                "Age": 32,
+                "Location": "Miami",
+                "Contact": "+1992418345"
+            },
+            {
+                "Name": "Pritam",
+                "Age": 29,
+                "Location": "India",
+                "Contact": "+91977418345"
+            },
+            {
+                "Name": "Williams",
+                "Age": 20,
+                "Location": "England",
+                "Contact": "+324290418345"
+            },
+            {
+                "Name": "Paul",
+                "Age": 22,
+                "Location": "Canada",
+                "Contact": "+1290418345"
+            },
+            {
+                "Name": "Erica",
+                "Age": 32,
+                "Location": "Miami",
+                "Contact": "+1992418345"
+            },
+            {
+                "Name": "Pritam",
+                "Age": 29,
+                "Location": "India",
+                "Contact": "+91977418345"
+            },
+            {
+                "Name": "Paul",
+                "Age": 22,
+                "Location": "Canada",
+                "Contact": "+1290418345"
+            },
+            {
+                "Name": "Erica",
+                "Age": 32,
+                "Location": "Miami",
+                "Contact": "+1992418345"
+            },
+            {
+                "Name": "Pritam",
+                "Age": 29,
+                "Location": "India",
+                "Contact": "+91977418345"
+            },
+            {
+                "Name": "Paul",
+                "Age": 22,
+                "Location": "Canada",
+                "Contact": "+1290418345"
+            },
+            {
+                "Name": "Erica",
+                "Age": 32,
+                "Location": "Miami",
+                "Contact": "+1992418345"
+            },
+            {
+                "Name": "Pritam",
+                "Age": 29,
+                "Location": "India",
+                "Contact": "+91977418345"
+            },
+        ];
 
-            $('#table_id')
-  .DataTable({
-    "destroy": true, // In order to reinitialize the datatable
-    "pagination": true, // For Pagination
-    "sorting": true, // For sorting
-    "aaData": data,
-    "columns": [{
-      "data": "Name"
-    }, {
-      "data": "Age"
-    }, {
-      "data": "Location"
-    }, {
-      "data": "Contact"
-    }]
-  });
+        $('#table_id')
+            .DataTable({
+                "destroy": true, 
+                "pagination": true, 
+                "sorting": true,
+                "aaData": data,
+                "columns": [{
+                    "data": "Name"
+                }, {
+                    "data": "Age"
+                }, {
+                    "data": "Location"
+                }, {
+                    "data": "Contact"
+                }]
+            });
     </script>
 
 </body>

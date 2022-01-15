@@ -6,17 +6,40 @@ body{
 header{
     display: flex;
     border-bottom: 2px solid;
+    height: 60px;
+    min-width: 400px;
 }
 
 header .logo{
     height: 39px;
-    margin-top: 6px;
+    margin-top: 10px;
 }
 
 header .hamburger{
-    margin: 15px;
+    margin: 20px;
     cursor: pointer;
     font-weight: 700;
+}
+
+.mobileHeader{
+    display: flex;
+    border-bottom: 2px solid;
+    height: 60px;
+    display: none;
+    
+}
+
+.mobileHeader .logo{
+    height: 39px;
+    margin-top: 10px;
+}
+
+.mobileHeader .hamburger{
+    margin: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    position: absolute;
+    left:  0px;
 }
 
 *:focus{
@@ -57,8 +80,11 @@ header .hamburger{
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 24px;
     margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    display: none;
   }
   
   .openbtn {
@@ -97,9 +123,10 @@ header .hamburger{
     border: none;
     color: white;
     position: relative;
-    left:-35px;
+    margin-right: -35px;
+    left: -32px;
     height: 22px;
-    background-color:  rgb(42 63 84);
+    background-color: rgb(42 63 84);
     border-radius: 12px;
     width: 30px;
 }
@@ -107,5 +134,44 @@ header .hamburger{
 iframe{
     width: 100%;
     border: none;
-    height: 100vh;
+    height: calc(100% - 120px);
 }
+
+#table{
+    display: none;
+}
+
+table{
+    width: 100%;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 600px){
+
+    body{
+        min-width: 400px;
+    }
+    .sidebar{
+        top: 0;
+    }
+
+    .mobileHeader{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .header{
+        display: none;
+    }
+
+    .closebtn{
+        display: block !important;
+    }
+  }
+
+  #breadcrumbs{
+      font-size: 24px;
+      font-weight: bold;
+  }
