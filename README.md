@@ -11,6 +11,6 @@ How to use
     (A table of users will be displyed here)
 =======================================OR===============================
 
-https://kishanmund.github.io/MIC-Project/
+[a link](https://kishanmund.github.io/MIC-Project/)
 
 click on this link to visit it on the web.
