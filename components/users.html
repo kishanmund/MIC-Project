@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./../CSS/users.css">
+</head>
+
+<body>
+    
+    <div class="formContainer">
+        <div class="formHeader">
+            <span class="heading">Add Users
+                <span class="subHeading">(Only user can be added)</span>
+            </span>
+        </div>
+        <hr>
+        <form class="form">
+            <div>
+                <div class="fields">
+                    <label for="f_name">First Name<span class="star">*</span> :</label>
+                    <input type="text" id="f_name" name="f_name" required="" minlength="1" maxlength="15">
+                </div>
+                <div class="fields">
+                    <label for="m_name">Middle Name :</label>
+                    <input type="text" id="m_name" name="m_name" minlength="1" maxlength="15">
+                </div>
+                <div class="fields">
+                    <label for="l_name">Last Name<span class="star">*</span> :</label>
+                    <input type="text" id="l_name" name="l_name" required="" minlength="1" maxlength="15">
+                </div>
+                <div class="genderContainer">
+                    <label for="gender">Gender :</label>
+                    <span class="gender">
+                        <input id="male" type="radio" name="gender" value="male">
+                        <label class="male" for="male">Male</label>
+                        <input id="female" type="radio" name="gender" value="female">
+                        <label class="female" for="female">Female</label>
+                    </span>
+                </div>
+                <div class="fields">
+                    <label for="dob">DOB <span class="star">*</span> :</label>
+                    <input type="date" id="dob" required="" name="dob" minlength="1" maxlength="15">
+                </div>
+                <div class="submitButton">
+                    <button class="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

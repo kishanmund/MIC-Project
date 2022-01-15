@@ -1,3 +1,5 @@
+
+
 body{
     margin: 0px !important;
 }
@@ -38,7 +40,7 @@ header .hamburger{
     padding-top: 60px;
   }
   
-  .sidebar a {
+  .sidebar span {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -47,7 +49,7 @@ header .hamburger{
     transition: 0.3s;
   }
   
-  .sidebar a:hover {
+  .sidebar span:hover {
     color: #f1f1f1;
   }
   
@@ -99,4 +101,11 @@ header .hamburger{
     height: 22px;
     background-color:  rgb(42 63 84);
     border-radius: 12px;
+    width: 30px;
+}
+
+iframe{
+    width: 100%;
+    border: none;
+    height: 100vh;
 }

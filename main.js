@@ -1,4 +1,7 @@
 let toggle=true
+
+let user=true
+
 function sideBar() {
     if(toggle){
         document.getElementById("mySidebar").style.width = "250px";
@@ -11,3 +14,12 @@ function sideBar() {
     }
     toggle=!toggle
   }
+
+function url(name){
+    window.history.pushState('page2', 'Title', '/index.html?users');
+}
+
+
+
+
+  

@@ -1,0 +1,93 @@
+/* Form Container */
+
+.formContainer{
+    border: 1px solid gainsboro;
+}
+
+.heading{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.subHeading{
+    font-size: 12px;
+}
+
+hr{
+    border: 1px solid gainsboro;
+    margin: 0 8px ;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="radio" i] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: blue;
+    color: white;
+  }
+
+.male{
+    padding: 10px 5px;
+    flex: 1;
+    text-align: center;
+}
+
+.female{
+    padding: 10px 5px;
+    flex: 1;
+    text-align: center;
+}
+
+.gender{
+    background-color: gray;
+    display: flex;
+    width: 177px;
+
+}
+
+.genderContainer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.genderContainer label{
+    padding: 10px 0 ;
+}
+
+.star{
+    color: red;
+    font-size: 10px;
+    position: relative;
+    top: -6px;
+}
+
+.fields{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+input{
+    width: 177px;
+}
+
+.submitButton{
+    display: flex;
+    justify-content: center;
+}
+
+.submit{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
