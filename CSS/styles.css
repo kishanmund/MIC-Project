@@ -111,7 +111,7 @@ header .hamburger{
 .breadcrumbs{
     display: flex;
     justify-content: space-between;
-    min-width: 434px;
+    min-width: 425px;
 }
 .search{
     border-radius: 12px;
