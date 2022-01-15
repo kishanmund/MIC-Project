@@ -7,7 +7,7 @@ header{
     display: flex;
     border-bottom: 2px solid;
     height: 60px;
-    min-width: 400px;
+    min-width: 450px;
 }
 
 header .logo{
@@ -111,6 +111,7 @@ header .hamburger{
 .breadcrumbs{
     display: flex;
     justify-content: space-between;
+    min-width: 450px;
 }
 .search{
     border-radius: 12px;
@@ -135,6 +136,7 @@ iframe{
     width: 100%;
     border: none;
     height: calc(100% - 120px);
+    min-width: 450px;
 }
 
 #table{
@@ -150,7 +152,7 @@ table{
 @media only screen and (max-width: 600px){
 
     body{
-        min-width: 400px;
+        min-width: 450px;
     }
     .sidebar{
         top: 0;
